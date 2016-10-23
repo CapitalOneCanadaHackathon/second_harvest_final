@@ -22,7 +22,7 @@ class Seller(models.Model):
 class Buyer(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     phone = models.CharField(max_length=20)
     opt_out = models.BooleanField(default=False)
     address = models.CharField(max_length=255)
