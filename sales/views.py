@@ -12,6 +12,11 @@ from .models import *
 from .constants import DEFAULT_PRICES
 
 
+def overview(request):
+    top_sellers = None
+    return render(request, 'sales/overview.html')
+
+
 def login_site(request):
     if request.method == 'POST':
         username = request.POST['username']

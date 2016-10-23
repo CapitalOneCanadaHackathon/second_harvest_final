@@ -28,7 +28,7 @@ class Buyer(models.Model):
     address = models.CharField(max_length=255)
     city = models.CharField(max_length=50)
     province = models.CharField(max_length=2, choices=PROVINCES, default="ON")
-    postal_code = models.CharField(max_length=6)
+    postal_code = models.CharField(max_length=7)
 
 
 class Tickets(models.Model):
